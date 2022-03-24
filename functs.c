@@ -37,3 +37,51 @@ int print_percent(va_list args)
 		print_character('%');
 	return (1);
 }
+/**
+ * print_integers - prints an integer
+ * @args: argument pass by user
+ * Return: characters printed
+ */
+int print_integers(va_list args)
+{
+	int integer = va_arg(args, int), numC = 1;
+
+	if (integer < 0)
+	{
+		print_character('-');
+		integer = integer * -1;
+		numC += 1;
+	}
+	if (integer == 0)
+	{
+		print_character('0');
+		numC += 1;
+	}
+	if (integer / 100000)
+	{
+		print_character(((integer / 100000) % 10) + '0');
+		numC += 1;
+	}
+	if (integer / 10000)
+	{
+		print_character(((integer / 10000) % 10) + '0');
+		numC += 1;
+	}
+	if (integer / 1000)
+	{
+		print_character(((integer / 1000) % 10) + '0');
+		numC += 1;
+	}
+	if (integer / 100)
+	{
+		print_character(((integer / 100) % 10) + '0');
+		numC += 1;
+	}
+	if (integer / 10)
+	{
+		print_character(((integer / 10) % 10) + '0');
+		numC += 1;
+	}
+	print_character(integer % 10 + '0');
+	return (numC);
+}

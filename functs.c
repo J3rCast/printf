@@ -19,6 +19,9 @@ int print_string(va_list args)
 	unsigned int i = 0;
 	char *string = va_arg(args, char *);
 
+	if (string == NULL)
+		string == "(null)";
+
 	while (string[i])
 	{
 		print_character(string[i]);

@@ -6,7 +6,7 @@
  */
 int _printf(const char *format, ...)
 {
-	int i = 0, numC = 0;
+	unsigned int i = 0, numC = 0;
 	va_list ap;
 	int (*get)(va_list);
 

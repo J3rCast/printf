@@ -24,7 +24,8 @@ int _printf(const char *format, ...)
 				return (numC);
 			get = get_function(&format[i]);
 			if (format[i] == 'c' || format[i] == 's'
-			|| format[i] == '%')
+			|| format[i] == '%' || format[i] == 'd'
+			|| format [i] == 'i')
 				numC += get(ap);
 			else
 			{

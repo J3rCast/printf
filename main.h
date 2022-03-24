@@ -24,7 +24,6 @@ int _printf(const char *format, ...);
 int print_string(va_list args);
 int print_c(va_list args);
 int print_percent(va_list args);
-int print_decimal(va_list args);
-int print_intB10(va_list args);
+int print_integers(va_list args);
 int (*get_function(const char *format))(va_list);
 #endif

@@ -13,8 +13,8 @@ int (*get_function(const char *format))(va_list args)
 		{"c", print_c},
 		{"s", print_string},
 		{"%", print_percent},
-		{"d", print_decimal},
-		{"i", print_intB10},
+		{"d", print_integers},
+		{"i", print_integers},
 		{NULL, NULL}
 	};
 

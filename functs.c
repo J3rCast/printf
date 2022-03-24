@@ -16,7 +16,7 @@ int print_c(va_list args)
  */
 int print_string(va_list args)
 {
-	int i = 0;
+	unsigned int i = 0;
 	char *string = va_arg(args, char *);
 
 	while (string[i])

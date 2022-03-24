@@ -20,7 +20,7 @@ int print_string(va_list args)
 	char *string = va_arg(args, char *);
 
 	if (string == NULL)
-		string == "(null)";
+		string = "(null)";
 
 	while (string[i])
 	{

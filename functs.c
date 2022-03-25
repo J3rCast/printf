@@ -87,11 +87,11 @@ int print_integers(va_list args)
  */
 int print_binary(va_list args)
 {
-	unsigned int integer = va_arg(args, int);
+	unsigned int integer = va_arg(args, unsigned int);
 	int i, numC = 0;
 	char *binArray;
 
-	binArray = malloc(sizeof(char) * va_arg(args, int));
+	binArray = malloc(sizeof(char) * va_arg(args, unsigned int));
 
 	for (i = 0; integer > 0; i++)
 	{

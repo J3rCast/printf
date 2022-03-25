@@ -15,6 +15,7 @@ int (*get_function(const char *format))(va_list args)
 		{"%", print_percent},
 		{"d", print_integers},
 		{"i", print_integers},
+		{"b", print_binary},
 		{NULL, NULL}
 	};
 

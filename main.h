@@ -2,6 +2,7 @@
 #define _MAIN_H_
 /*LIBRARIES*/
 #include <unistd.h>
+#include <stdlib.h>
 #include <stdio.h>
 #include <stdarg.h>
 #include <string.h>
@@ -19,6 +20,7 @@ typedef struct functions
 	int (*f)(va_list);
 } ob_fun;
 /*PROTOTYPES*/
+int print_binary(va_list args);
 int print_character(char c);
 int _printf(const char *format, ...);
 int print_string(va_list args);

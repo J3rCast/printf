@@ -80,3 +80,27 @@ int print_integers(va_list args)
 	print_character(integer % 10 + '0');
 	return (numC);
 }
+/**
+ * print_binary - prints the binary of a unsigned int
+ * @args: integer pass by user
+ * Return: characters printed
+ */
+int print_binary(va_list args)
+{
+	unsigned int integer = va_arg(args, int);
+	int i;
+	char *binArray;
+
+	binArray = malloc(sizeof(char) * va_arg(args, int));
+
+	for (i = 0; integer > 0; i++)
+	{
+		binArray[i] = ((integer % 2) + '0');
+		integer = integer / 2;
+	}
+	for (; i >= 0; i--)
+	{
+		print_character(binArray[i]);
+	}
+	return (i);
+}

@@ -93,7 +93,7 @@ int print_binary(va_list args)
 
 	binArray = malloc(sizeof(char) * va_arg(args, unsigned int));
 	if (binArray == NULL)
-		return (0);
+		return ('\0');
 
 	for (i = 0; integer > 0; i++)
 	{

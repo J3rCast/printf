@@ -57,34 +57,26 @@ int print_integers(va_list args)
 	}
 	if (integer == 0)
 	{
-		print_character('0');
-		return (1);
+		return (print_character('0'));
 	}
+	if (integer / 1000000000)
+		numC += print_character(((integer / 1000000000) % 10) + '0');
+	if (integer / 100000000)
+		numC += print_character(((integer / 100000000) % 10) + '0');
+	if (integer / 10000000)
+		numC += print_character(((integer / 10000000) % 10) + '0');
+	if (integer / 1000000)
+		numC += print_character(((integer / 1000000) % 10) + '0');
 	if (integer / 100000)
-	{
-		print_character(((integer / 100000) % 10) + '0');
-		numC += 1;
-	}
+		numC += print_character(((integer / 100000) % 10) + '0');
 	if (integer / 10000)
-	{
-		print_character(((integer / 10000) % 10) + '0');
-		numC += 1;
-	}
+		numC += print_character(((integer / 10000) % 10) + '0');
 	if (integer / 1000)
-	{
-		print_character(((integer / 1000) % 10) + '0');
-		numC += 1;
-	}
+		numC += print_character(((integer / 1000) % 10) + '0');
 	if (integer / 100)
-	{
-		print_character(((integer / 100) % 10) + '0');
-		numC += 1;
-	}
+		numC += print_character(((integer / 100) % 10) + '0');
 	if (integer / 10)
-	{
-		print_character(((integer / 10) % 10) + '0');
-		numC += 1;
-	}
+		numC += print_character(((integer / 10) % 10) + '0');
 	print_character(integer % 10 + '0');
 	return (numC);
 }

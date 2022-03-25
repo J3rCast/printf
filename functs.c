@@ -88,7 +88,7 @@ int print_integers(va_list args)
 int print_binary(va_list args)
 {
 	unsigned int integer = va_arg(args, int);
-	int i;
+	int i, numC = 0;
 	char *binArray;
 
 	binArray = malloc(sizeof(char) * va_arg(args, int));
@@ -98,9 +98,10 @@ int print_binary(va_list args)
 		binArray[i] = ((integer % 2) + '0');
 		integer = integer / 2;
 	}
+	numC = i;
 	for (; i >= 0; i--)
 	{
 		print_character(binArray[i]);
 	}
-	return (i);
+	return (numC);
 }

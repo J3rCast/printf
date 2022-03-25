@@ -47,7 +47,7 @@ int print_percent(va_list args)
  */
 int print_integers(va_list args)
 {
-	int integer = va_arg(args, int), numC = 1;
+	long int integer = va_arg(args, int), numC = 1;
 
 	if (integer < 0)
 	{

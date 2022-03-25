@@ -58,7 +58,7 @@ int print_integers(va_list args)
 	if (integer == 0)
 	{
 		print_character('0');
-		return (numC += 1);
+		return (1);
 	}
 	if (integer / 100000)
 	{

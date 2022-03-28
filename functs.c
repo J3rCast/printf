@@ -91,7 +91,7 @@ int print_binary(va_list args)
 	int i, numC = 0;
 	char *binArray;
 
-	binArray = malloc(sizeof(int) * va_arg(args, unsigned int));
+	binArray = malloc(va_arg(args, unsigned int));
 	if (binArray == NULL)
 		return ('\0');
 

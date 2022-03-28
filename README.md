@@ -10,12 +10,15 @@ This file contains a function that choose the correct function to print based on
 * %d - allows you to print an decimal in base 10 integer
 
 ##Example of its use whit %c
+
 ´´´
 char a = 'b';
 
 printf("%c is a character", a);
 ´´´
+
 ##Output
+
 ´´´
 b is a character
 ´´´

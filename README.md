@@ -9,7 +9,7 @@ This file contains a function that choose the correct function to print based on
 * %i - allows you to print an integer
 * %d - allows you to print an decimal in base 10 integer
 
-##Example of its use whit %c
+## Example of its use whit %c
 
 ´´´
 char a = 'b';
@@ -17,7 +17,7 @@ char a = 'b';
 printf("%c is a character", a);
 ´´´
 
-##Output
+## Output
 
 ´´´
 b is a character

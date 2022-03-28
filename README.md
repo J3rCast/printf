@@ -49,9 +49,9 @@ Use double % to print a single %
 ## Example of its use whit %i
 
 ```
-int i = 1024;
+int num = 1024;
 
-_printf("%i is an integer");
+_printf("%i is an integer", num);
 ```
 
 ## Output

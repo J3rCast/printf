@@ -2,7 +2,7 @@
 .TH "_printf man page"
 .SH NAME
 
-_printf \- prints data.
+_printf \- prints data according to the format given by the user.
 
 .SH SYNOPSIS
 
@@ -10,7 +10,7 @@ _printf FORMAT
 
 .SH DESCRIPTION
 
-Printf prints the argument given based on format
+Printf prints the argument given based on format specifiers, which start with a % character, indicate the location and method to translate a piece of data (such as a number) to characters. 
 
 .SH USAGE
 
@@ -30,3 +30,8 @@ Printf can print some variables in a string based on characters next to '%'
 .SH AUTHOR
 
 Written by Jerson Arturo Castro Rincon and Daniel Santiago Lopez Ortiza
+
+.SH COPYRIGHT
+
+Copyright © 2018 Free Software Foundation, Inc.  License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
+       This is free software: you are free to change and redistribute it.  There is NO WARRANTY, to the extent permitted by law.
